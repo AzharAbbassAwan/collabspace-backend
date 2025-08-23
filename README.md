@@ -46,13 +46,13 @@ npm install
 
 ## Create .env
 
-PORT=9000
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=yourpassword
-DB_NAME=collabspace
-JWT_SECRET=your_jwt_secret
-REDIS_HOST=localhost
+- PORT=9000
+- DB_HOST=localhost
+- DB_USER=root
+- DB_PASS=yourpassword
+- DB_NAME=collabspace
+- JWT_SECRET=your_jwt_secret
+- REDIS_HOST=localhost
 
 ```bash
 npm run dev
