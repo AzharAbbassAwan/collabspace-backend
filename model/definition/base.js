@@ -4,15 +4,15 @@ class BaseModel extends Model {
   static baseAttributes(DataTypes) {
     return {
       created_by: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.UUID,
         allowNull: true,
       },
       updated_by: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.UUID,
         allowNull: true,
       },
       deleted_by: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.UUID,
         allowNull: true,
       },
     };
