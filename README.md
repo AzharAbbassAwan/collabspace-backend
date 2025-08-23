@@ -39,7 +39,7 @@ Built with **Node.js (Express)** and **Sequelize**, featuring **JWT authenticati
 ### **1. Clone Repo**
 
 ```bash
-git clone https://github.com/yourusername/collabspace-backend.git
+git clone https://github.com/AzharAbbassAwan/collabspace-backend.git
 cd collabspace-backend
 npm install
 ```
