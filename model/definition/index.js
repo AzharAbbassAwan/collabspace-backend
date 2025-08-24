@@ -24,12 +24,12 @@ User.hasMany(UserRole, {
 UserRole.belongsTo(User, {
   onDelete: "CASCADE",
   foreignKey: "user_id",
-  as: "user",
+  as: "userRole",
 });
 Role.hasMany(UserRole, {
   onDelete: "CASCADE",
   foreignKey: "role_id",
-  as: "userRoles",
+  as: "role",
 });
 UserRole.belongsTo(Role, {
   onDelete: "CASCADE",
@@ -46,7 +46,7 @@ Role.hasMany(RolePermission, {
 RolePermission.belongsTo(Role, {
   onDelete: "CASCADE",
   foreignKey: "role_id",
-  as: "role",
+  as: "rolePermission",
 });
 
 //permission and rolePermission
@@ -127,6 +127,9 @@ const models = {
   RolePermission,
   Organization,
   OrganizationMember,
+  InviteToken,
+  Project,
+  Task,
 };
 
 sequelize.models = models;

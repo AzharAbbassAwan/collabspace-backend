@@ -29,9 +29,9 @@ InviteToken.init(
       allowNull: false,
     },
     role: {
-      type: DataTypes.ENUM("admin", "manager", "user"),
+      type: DataTypes.ENUM("Admin", "Manager", "User"),
       allowNull: false,
-      defaultValue: "user",
+      defaultValue: "User",
     },
     expiresAt: {
       type: DataTypes.DATE,

@@ -24,8 +24,8 @@ Organization.init(
       defaultValue: "free",
     },
     status: {
-      type: DataTypes.ENUM("active", "suspended"),
-      defaultValue: "active",
+      type: DataTypes.ENUM("active", "trial", "suspended"),
+      defaultValue: "trial",
     },
 
     ...BaseModel.baseAttributes(DataTypes),

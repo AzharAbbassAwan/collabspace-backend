@@ -16,7 +16,7 @@ module.exports = {
         { transaction }
       );
     } catch (error) {
-      console.error("Error seeding role permissions:", error);
+      console.error("Error seeding user role:", error);
       throw error;
     }
   },

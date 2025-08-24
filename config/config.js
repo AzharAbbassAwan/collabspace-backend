@@ -17,4 +17,16 @@ module.exports = {
       idle: 20000,
     },
   },
+  jwt: {
+    secret: process.env.secret || "collabspacesecret",
+    rememberMeExpiry: "5d",
+    dontRememberMeExpiry: "5h",
+    resetPasswordExpiry: "5d",
+    refreshTokenSecret: process.env.secret || "collabspacesecret",
+    refreshTokenExpiry: "30d",
+  },
+  rate_limit: {
+    time: 60000,
+    request: 200,
+  },
 };
